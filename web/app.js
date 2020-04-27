@@ -27,7 +27,7 @@ function joinSession() {
     form.style.display = 'none';
     webComponent.style.display = 'block';
 
-    if(webComponent.getAttribute("openvidu-secret") != undefined && webComponent.getAttribute("openvidu-server-url") != undefined ){
+    if(webComponent.getAttribute("openvidu-secret") != "MY_SECRET" && webComponent.getAttribute("openvidu-server-url") != "https://18.221.87.165:4443" ){
         location.reload();
     }else {
         getToken(sessionName).then((token1) => {
