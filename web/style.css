@@ -39,6 +39,10 @@ nav i.fa:hover {
 	color: #a9a9a9;
 }
 
+#main-container {
+	padding-bottom: 80px;
+}
+
 .vertical-center {
     width: -webkit-fit-content;
     width: fit-content;
@@ -71,6 +75,26 @@ a:hover .demo-logo {
 	-webkit-filter: brightness(0.7);
 	filter: brightness(0.7);
 }
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #4d4d4d;
+}
+
+.footer .text-muted {
+	margin: 20px 0;
+	float: left;
+	color: #ccc;
+}
+
+
+.horizontal-center {
+	margin: 0 auto;
+}
+
 .form-control {
 	color: #0088aa;
 	font-weight: bold;
@@ -82,11 +106,11 @@ a:hover .demo-logo {
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 136, 170, 0.6);
 }
 
-#main-container {
-	padding-bottom: 80px;
-}
 
-@media screen and (max-width: 991px) and (orientation: portrait) {
+/* xs ans md screen resolutions*/
+
+@media screen and (max-width: 991px) {
+
 	.container .navbar-header {
 		margin-right: 0 !important;
 		margin-left: 0 !important;
@@ -97,11 +121,8 @@ a:hover .demo-logo {
 	nav i.fa {
 		font-size: 32px;
 	}
+
 	.vertical-center {
 		padding-top: 10px;
 	}
-}
-
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-
 }
